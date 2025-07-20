@@ -1,17 +1,8 @@
 import Card from "@/components/Card";
 import { Projects } from "@/data/Projects";
 
-// interface CardProps {
-//   title: string;
-//   description?: string;
-//   techStack?: string[];
-//   liveLink?: string;
-//   githubLink?: string;
-//   imageUrl: string;
-// }
 
 export default function Project() {
-  // const projectsArray: CardProps[] = Projects;
 
   return (
     <div className="relative bg-[#08090a] min-h-screen text-white flex justify-center">

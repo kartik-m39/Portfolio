@@ -2,7 +2,6 @@
 import AvatarViewer from "@/components/AvatarModel";
 import { Allan } from "next/font/google";
 import Marquee from "react-fast-marquee";
-import { Typewriter } from "react-simple-typewriter";
 
 const allan = Allan({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -14,37 +13,38 @@ export default function Splash() {
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <div className="w-full">
           {/* Multiple marquee rows for better coverage */}
-          <div className="space-y-12">
-            <Marquee 
+          <div className="-space-y-20 overflow-hidden marquee-container relative">
+            <Marquee
               gradient={false} 
               speed={100} 
-              className="opacity-10"
+              className="opacity-20"
+              direction="left"
             >
-              <span className={`text-8xl font-bold text-white mr-20 ${allan.className}`}>
+              <span className={`text-5xl md:text-7xl lg:text-9xl font-bold text-white mr-20 ${allan.className} tracking-tighter z-20 `}>
                 I write code that helps • build Products that connect • A dev passionate about crafting • bold and memorable projects •
               </span>
             </Marquee>
             
             <Marquee 
               gradient={false} 
-              speed={120} 
+              speed={200} 
               direction="right" 
-              className="opacity-15"
+              className="opacity-6"
             >
-              <span className={`text-6xl font-bold text-white mr-20 ${allan.className}`}>
-                Frontend Developer • Full Stack Engineer • React Specialist • TypeScript Expert •
+              <span className={`text-9xl font-bold text-white mr-20 ${allan.className} `}>
+                 I write code that helps • build Products that connect • A dev passionate about crafting • bold and memorable projects •
               </span>
             </Marquee>
             
-            <Marquee 
+            {/* <Marquee 
               gradient={false} 
               speed={140} 
-              className="opacity-8"
+              className="opacity-4"
             >
               <span className={`text-9xl font-bold text-white mr-20 ${allan.className}`}>
                 KARTIK MANCHANDA • DEVELOPER • CREATOR • INNOVATOR •
               </span>
-            </Marquee>
+            </Marquee> */}
           </div>
         </div>
       </div>
@@ -69,8 +69,8 @@ export default function Splash() {
         </h1>
       </section>
 
-      <div className="relative flex mt-0">
-        <p
+      <div className="relative flex justify-center items-center mt-0">
+        {/* <p
           className={`mt-20 pr-15  ml-7 w-[400px] text-3xl font-medium ${allan.className} font-allan leading-relaxed text-white/70 sm:max-w-none whitespace-normal break-words allan-regular`}
         >
           <span className="block overflow-hidden break-words whitespace-normal">
@@ -84,7 +84,7 @@ export default function Splash() {
               // delaySpeed={1000}
             />
           </span>
-        </p>
+        </p> */}
 
         
 

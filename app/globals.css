@@ -99,3 +99,76 @@
   transition: transform 0.1s ease;
 }
 
+.backdrop-blur {
+  backdrop-filter: blur(8px);
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.gradient-text {
+  background: linear-gradient(270deg, #00f, #0ff, #fff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 8s ease-in-out infinite;
+}
+
+/* Outline Effect */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.marquee-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.marquee-container {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Common container rule */
+.marquee-container {
+  overflow: hidden; /* Important to prevent overflow scroll bar */
+}
+
+/* Hide scrollbars for marquee */
+body {
+  overflow-x: hidden;
+}
+
+/* Hide all scrollbars but keep functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.marquee-container {
+  overflow: hidden !important;
+}
+
+/* Hide scrollbars globally */
+/* body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+} */
+
+/* Hide scrollbars but keep functionality */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+} */

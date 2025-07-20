@@ -4,6 +4,7 @@ import DashboardGrid from "@/components/BentoGrid";
 import Card from "@/components/Card";
 import { LensDemoThird } from "@/components/Magnifyinglens";
 import TechMarquee from "@/components/Marquee";
+import { Projects } from "@/data/Projects";
 import { AlarmClock } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -29,6 +30,8 @@ export default function Portfolio() {
     // Cleanup on unmount
     return () => clearInterval(interval);
   }, []);
+
+  const featuredProjects = Projects.slice(2, 4);
 
   return (
     <div className="relative min-h-screen text-white flex justify-center">
@@ -88,11 +91,18 @@ export default function Portfolio() {
 
         <div className="mt-10">
           <h2 className="font-bold text text-xl">About</h2>
-          <p className="text-[#ababab] font-semibold leading-7 text-justify ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            delectus minus repellendus veniam doloremque tempore fugiat
-            assumenda provident unde, voluptatibus deserunt id officiis optio
-            quidem. Neque et placeat sequi minima!
+          <p className="text-[#ababab] font-semibold leading-6.5  tracking-tightertext-justify ">
+            I build things for the internet, sometimes
+            they even work on the first try.
+            Always experimenting with new tech,
+            breaking stuff (and fixing it better), and pushing boundaries to
+            keep the game interesting. Web, Dbs, real-time magic—you name it,
+            I’m on it. <br/><br/>When I’m not knee-deep in code, I’m probably shooting
+            hoops, walking through nature, vibing to music, or doom-scrolling
+            Instagram for the next big meme drop. Big on learning, big on
+            building, and always chasing that next crazy idea that just might
+            work. <br/><br/>But I’m not just about semicolons and Git commits—I’m here to
+            craft products that don’t just work, they wow..
           </p>
         </div>
 
@@ -122,10 +132,10 @@ export default function Portfolio() {
             for more!
           </p>
 
-          <div className="flex flex-wrap gap-2 mt-10">
-            {/* <Card />
-            <Card />
-            <Card /> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 mt-10">
+            {featuredProjects.map((project, index) => (
+              <Card key={index} project={project} />
+            ))}
           </div>
         </div>
 

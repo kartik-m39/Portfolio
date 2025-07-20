@@ -23,7 +23,7 @@ const TechMarquee: React.FC = () => {
       }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className={`w-5 h-5 ${tech.color} rounded flex items-center justify-center text-xs font-bold text-white`}>
+      <div className={`w-5 h-5 rounded flex items-center justify-center text-xs font-bold text-white`}>
         {typeof tech.icon === 'string' ? (
           tech.icon
         ) : (

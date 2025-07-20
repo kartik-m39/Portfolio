@@ -1,10 +1,13 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import { Spotlight } from "../ui/Spotlight";
 import Portfolio from "@/pages/Portfolio";
+import { FloatingNavDemo } from "./FloatingNavDemo";
 
 export function SpotlightPreview() {
   return (
+    <>
+    <FloatingNavDemo/>
     <div className="relative flex min-h-screen w-full overflow-hidden bg-black/[0.96] antialiased md:items-center md:justify-center">
         {/* Grid background pattern */}
       {/* <div
@@ -22,5 +25,6 @@ export function SpotlightPreview() {
         <Portfolio/>
       </div>
     </div>
+    </>
   );
 }

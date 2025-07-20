@@ -1,12 +1,8 @@
 "use client";
-import { useState } from "react";
 import { Lens } from "../ui/lens";
-import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export function LensDemoThird() {
-  const [hovering, setHovering] = useState(false);
 
   return (
     <div>

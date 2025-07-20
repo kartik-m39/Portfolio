@@ -1,15 +1,24 @@
-// components/AvatarViewer.tsx
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
 import { Suspense, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Group } from "three";
 
-function AvatarModel({ targetRotation }) {
+interface TargetRotation {
+  x: number;
+  y: number;
+}
+
+interface AvatarModelProps {
+  targetRotation: TargetRotation;
+}
+
+function AvatarModel({ targetRotation }: AvatarModelProps) {
   const gltf = useGLTF("/models/avatar2.glb"); // put avatar.glb in public folder
 
-  const meshRef = useRef();
+  const meshRef = useRef<Group>(null);
   const currentRotation = useRef({ x: 0, y: 0 });
   
   useFrame(() => {
@@ -92,7 +101,7 @@ export default function AvatarViewer() {
     >
 
       <Canvas
-        camera={{ position: [0, 1, 3], fov: 10 }}
+        camera={{ position: [-0.8, 0.8, 3], fov: 10 }}
         gl={{ alpha: true, antialias: true }}
         style={{ background: "rgba(0,0,0,0)" }}
       >
