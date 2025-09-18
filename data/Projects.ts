@@ -49,9 +49,9 @@ export const Projects: CardProps[] = [
     description:
       "A simple WebRTC system enabling one browser tab to stream audio/video to another. Uses PeerConnection for media and WebSockets for signaling, demonstrating peer-to-peer communication basics.",
     techStack: ["NextJS", "Typescript", "WebRTC", "WebSockets"],
-    liveLink: "",
+    liveLink: "https://web-rtc-pearl-ten.vercel.app/",
     githubLink: "https://github.com/kartik-m39/WebRTC",
-    imageUrl: "/webrtc.png",
+    imageUrl: "/webrtc2.png",
   },
   {
     title: 'Mailkage',
