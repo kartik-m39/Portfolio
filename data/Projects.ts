@@ -71,6 +71,30 @@ export const Projects: CardProps[] = [
     githubLink: "https://github.com/kartik-m39/Draw-App",
     imageUrl: "/drawApp.png",
   },
+  {
+    title: "Solana Faucet",
+    description: "A Solana Faucet for airdropping SOL into a wallet address. Also check for the balance of that wallet address",
+    techStack: ["web3JS", "NextJS", "Typescript", "anza-xyz Wallet adapters"],
+    liveLink: "https://sol-faucet-git-main-kartik-manchandas-projects.vercel.app/",
+    githubLink: "https://github.com/kartik-m39/SOL_Faucet",
+    imageUrl: "/solFaucet.png",
+  },
+  {
+    title: "Solana Token Mint",
+    description: "A web app to create and launch your own SPL tokens on the Solana blockchain, with custom metadata and image upload via Pinata/IPFS.",
+    techStack: ["web3JS", "NextJS", "Typescript", "anza-xyz Wallet adapters", "@solana/spl-token", "Pinata"],
+    liveLink: "https://sol-mint-x.vercel.app/",
+    githubLink: "https://github.com/kartik-m39/SolMintX/",
+    imageUrl: "/tokenLaunchPad.png",
+  },
+  {
+    title: "Pixi-Hero",
+    description: "A web app to create and launch your own SPL tokens on the Solana blockchain, with custom metadata and image upload via Pinata/IPFS.",
+    techStack: ["@pixi/react", "PixiJs", "Typescript", "Canvas"],
+    liveLink: "https://pixi-hero.vercel.app/",
+    githubLink: "https://github.com/kartik-m39/PixiHero",
+    imageUrl: "/game.png",
+  },
 ];
 
 

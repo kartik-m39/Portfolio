@@ -78,8 +78,10 @@ export default function Portfolio() {
                 <AlarmClock className="w-4 h-4" />
                 {time} (IST)
               </li>
-              <li className="bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold">
-                ✨Resume
+              <li className="bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold cursor-pointer duration-300 ease-in-out hover:bg-[#434343]">
+                <a href="https://drive.google.com/file/d/1Tor0Jd-hCIiuI4FDVZZuL_wmbj6FF84v/view?usp=sharing" target="_blank">
+                  ✨Resume
+                </a>
               </li>
             </ul>
           </div>
@@ -146,14 +148,15 @@ export default function Portfolio() {
           <p className="text-[#ababab] font-normal leading-6 text-justify -tracking-tight">
             Let’s build something legendary.My DMs on{" "}
             <a
-              href={"https://x.com/kartikm39"}
+              href={"https://x.com/kartikm39"} target="_blank"
               className="text-white hover:cursor-pointer hover:underline"
             >
               X/Twitter
             </a>{" "}
             and{" "}
             <a
-              href={"mailto:manchandakartik11@gmail.com"}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=manchandakartik11@gmail.com&su=Inquiry&body=Hi%20Kartik,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you..."
+              target="_blank"
               className="text-white hover:cursor-pointer hover:underline"
             >
               Mails

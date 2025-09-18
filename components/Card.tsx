@@ -50,7 +50,7 @@ export default function Card({ project }: CardProps) {
         {/* Links */}
         <div className="flex gap-1 mt-2">
           { liveLink !== "" ?  <a
-            href={liveLink}
+            href={liveLink} target="_blank"
             className="flex items-center gap-2 bg-white hover:bg-[#878787] text-black px-2 py-1 rounded-md text-[10px] font-medium transition-colors"
           >
             <ExternalLink className="w-2 h-2" />
@@ -58,7 +58,7 @@ export default function Card({ project }: CardProps) {
           </a> : ""}
           
           <a
-            href={githubLink}
+            href={githubLink} target="_blank"
             className="flex items-center gap-2 bg-white hover:bg-[#878787] text-black px-2 py-1 rounded-md text-[10px] font-medium transition-colors"
           >
             <Github className="w-2 h-2" />
