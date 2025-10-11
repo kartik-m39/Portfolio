@@ -89,11 +89,19 @@ export const Projects: CardProps[] = [
   },
   {
     title: "Pixi-Hero",
-    description: "A web app to create and launch your own SPL tokens on the Solana blockchain, with custom metadata and image upload via Pinata/IPFS.",
+    description: "A game created using canvas and pixiJs",
     techStack: ["@pixi/react", "PixiJs", "Typescript", "Canvas"],
     liveLink: "https://pixi-hero.vercel.app/",
     githubLink: "https://github.com/kartik-m39/PixiHero",
     imageUrl: "/game.png",
+  },
+  {
+    title: "Tweth",
+    description: "Your own Twitter on the blockchain — fully decentralized, censorship-free, and powered by smart contracts. Every post is an on-chain truth.",
+    techStack: ["Tanstack React Query", "Wagmi", "Typescript", "Viem"],
+    liveLink: "https://tweth.vercel.app/",
+    githubLink: "https://github.com/kartik-m39/Tweth",
+    imageUrl: "/tweth.png",
   },
 ];
 
