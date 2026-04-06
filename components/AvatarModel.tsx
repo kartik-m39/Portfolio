@@ -94,7 +94,7 @@ export default function AvatarViewer() {
           ease: "easeInOut",
         },
       }}
-      className="w-[600px] h-[600px] rounded-full overflow-hidden bg-transparent mask-fade-2 relative z-50"
+      className="w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] md:w-[600px] md:h-[600px] rounded-full overflow-hidden bg-transparent mask-fade-2 relative z-50"
       style={{ boxShadow: "0 0 0 1px transparent" }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

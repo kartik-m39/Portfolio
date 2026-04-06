@@ -32,8 +32,8 @@ export default function Portfolio() {
 
   return (
     <div className="relative min-h-screen text-gray-900 dark:text-white flex justify-center w-full">
-      <div className="min-h-screen w-full max-w-3xl px-6 md:px-12 py-32 flex flex-col justify-between">
-        <div className="flex flex-col-reverse md:flex-row justify-between w-full items-center md:items-start gap-8 md:gap-0">
+      <div className="min-h-screen w-full max-w-3xl px-6 py-10 md:px-12 md:py-32 flex flex-col justify-between">
+        <div className="flex flex-col-reverse md:flex-row justify-between w-full items-center md:items-start  md:gap-0">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Hi, I&apos;m Kartik
@@ -41,7 +41,7 @@ export default function Portfolio() {
 
             <h2 className="text-xl mt-5 font-semibold">dev | kxm39</h2>
 
-            <ul className="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
+            <ul className="flex flex-wrap justify-center md:justify-start gap-1 mt-2">
               <li className="bg-gray-200 dark:bg-[#2e2e2e] text-xs px-2 py-1 rounded-md font-bold flex items-center gap-1">
                 <svg
                   version="1.1"
@@ -89,8 +89,8 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-12 md:mt-10">
-          <h2 className="font-bold text-xl mb-4 text-center md:text-left">About</h2>
-          <p className="text-gray-600 dark:text-[#ababab] font-medium leading-relaxed tracking-tight text-justify md:text-left">
+          <h2 className="font-bold text-xl mb-2 text-center md:text-left">About</h2>
+          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight text-justify md:text-left">
             I build things for the internet, sometimes
             they even work on the first try.
             Always experimenting with new tech,
@@ -105,11 +105,11 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 md:mt-10">
           <TechMarquee />
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 md:mt-10">
           <DashboardGrid />
         </div>
 
@@ -117,7 +117,7 @@ export default function Portfolio() {
           <h2 className="text-gray-900 dark:text-[#fafafa] text-4xl md:text-5xl mb-4 font-bold flex justify-center text-center tracking-tighter">
             Fresh stuff from my Desk
           </h2>
-          <p className="text-gray-600 dark:text-[#ababab] font-medium leading-relaxed tracking-tight text-lg md:text-[20px] text-center w-full md:max-w-[80%] mx-auto">
+          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight text-lg md:text-[20px] text-center w-full md:max-w-[80%] mx-auto">
             I’ve been creating some awesome stuff, from sleek apps to cool projects and more. Here’s a glimpse of what I’ve been working on—check out the full{" "}
             <a href={"/project"} className="text-blue-600 dark:text-[#3b82f5] hover:underline font-semibold">
               projects page
@@ -136,7 +136,7 @@ export default function Portfolio() {
           <h2 className="text-gray-900 dark:text-[#fafafa] text-4xl md:text-5xl mb-6 font-bold tracking-tighter">
             Say Hello👋
           </h2>
-          <p className="text-gray-600 dark:text-[#ababab] font-medium leading-relaxed tracking-tight">
+          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight">
             Let’s build something legendary. My DMs on{" "}
             <a
               href={"https://x.com/kartikm39"} target="_blank"

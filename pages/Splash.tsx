@@ -89,7 +89,7 @@ export default function Splash() {
 
         
 
-        <div className="flex justify-center -mt-20 z-20">
+        <div className="flex justify-center mt-10 sm:-mt-16 md:-mt-20 z-20">
           <AvatarViewer />
         </div>
       </div>

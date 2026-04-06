@@ -88,7 +88,7 @@ const DashboardGrid = () => {
 
                   {/* Leetcode */}
                 <div
-                  className="bg-[url(/Leetcode.jpg)] rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:scale-[0.98] hover:brightness-110 hover:shadow-xl hover:shadow-gray-500/20 hover:-translate-y-0.5 transition-all duration-300 ease-out cursor-pointer group shadow-sm dark:shadow-none"
+                  className="bg-[url(/leetcode.png)] rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:scale-[0.98] hover:brightness-110 hover:shadow-xl hover:shadow-gray-500/20 hover:-translate-y-0.5 transition-all duration-300 ease-out cursor-pointer group shadow-sm dark:shadow-none"
                   style={{
                     backgroundSize: "cover",
                     backgroundPosition: "center 30%",
@@ -107,8 +107,8 @@ const DashboardGrid = () => {
             }}
             onClick={() => handleLinkClick('https://www.linkedin.com/in/kartik-manchanda-538052263/')}
             >
-                <div className="bg-black/50 px-2 py-1 rounded">
-                  <span className="text-white text-xs font-medium drop-shadow-md">
+                <div className="px-2 py-1 rounded">
+                  <span className="text-white text-xs bg-black/40 font-medium px-2 py-1 rounded-md drop-shadow-md items-end">
                     (serious stuff 😤)
                   </span>
                 </div>
@@ -126,7 +126,7 @@ const DashboardGrid = () => {
             }}
           >
             <div className="flex items-baseline justify-end">
-              <div className="w-8 h-8 text-red-500 animate-pulse bg-white/80 rounded-full p-1 shadow-md">
+              <div className="w-8 h-8 text-red-500 animate-pulse rounded-full p-1 shadow-md">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>

@@ -27,13 +27,12 @@ export const Projects: CardProps[] = [
     imageUrl: "/aegis.png",
   },
   {
-    title: 'Real Time Chat App',
-    description:
-      "A real-time chat app built with React, TypeScript, and WebSockets. Users can create rooms and chat instantly in a clean, interactive interface with instant message delivery.",
-    techStack: ["React", "Typescript", "WebSockets"],
-    liveLink: "https://ws-chat-room-7n7f.vercel.app/",
-    githubLink: "https://github.com/kartik-m39/WS_ChatRoom",
-    imageUrl: "/wsChat.png",
+    title: "Tweth",
+    description: "Your own Twitter on the blockchain — fully decentralized, censorship-free, and powered by smart contracts. Every post is an on-chain truth.",
+    techStack: ["Tanstack React Query", "Wagmi", "Typescript", "Viem"],
+    liveLink: "https://tweth.vercel.app/",
+    githubLink: "https://github.com/kartik-m39/Tweth",
+    imageUrl: "/tweth.png",
   },
   {
     title: 'PharmaSage',
@@ -43,6 +42,15 @@ export const Projects: CardProps[] = [
     liveLink: "https://pharma-sage-clinical.vercel.app/",
     githubLink: "https://github.com/kartik-m39/PharmaSage",
     imageUrl: "/pharmasage.png",
+  },
+  {
+    title: 'Real Time Chat App',
+    description:
+      "A real-time chat app built with React, TypeScript, and WebSockets. Users can create rooms and chat instantly in a clean, interactive interface with instant message delivery.",
+    techStack: ["React", "Typescript", "WebSockets"],
+    liveLink: "https://ws-chat-room-7n7f.vercel.app/",
+    githubLink: "https://github.com/kartik-m39/WS_ChatRoom",
+    imageUrl: "/wsChat.png",
   },
   {
     title: 'WebRTC',
@@ -94,14 +102,6 @@ export const Projects: CardProps[] = [
     liveLink: "https://pixi-hero.vercel.app/",
     githubLink: "https://github.com/kartik-m39/PixiHero",
     imageUrl: "/game.png",
-  },
-  {
-    title: "Tweth",
-    description: "Your own Twitter on the blockchain — fully decentralized, censorship-free, and powered by smart contracts. Every post is an on-chain truth.",
-    techStack: ["Tanstack React Query", "Wagmi", "Typescript", "Viem"],
-    liveLink: "https://tweth.vercel.app/",
-    githubLink: "https://github.com/kartik-m39/Tweth",
-    imageUrl: "/tweth.png",
   },
   {
     title: "Toney",
