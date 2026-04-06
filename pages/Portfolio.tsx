@@ -16,7 +16,6 @@ export default function Portfolio() {
       .replace("PM", "pm")
   );
 
-  // updating the time after evrey second
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(
@@ -26,26 +25,24 @@ export default function Portfolio() {
           .replace("PM", "pm")
       );
     }, 1000);
-
-    // Cleanup on unmount
     return () => clearInterval(interval);
   }, []);
 
   const featuredProjects = Projects.slice(2, 4);
 
   return (
-    <div className="relative min-h-screen text-white flex justify-center">
-      <div className="min-h-screen w-[60%] px-12 py-32 flex flex-col justify-between">
-        <div className="flex justify-between w-full ">
-          <div>
-            <h1 className="text-5xl font-bold tracking-tight">
+    <div className="relative min-h-screen text-gray-900 dark:text-white flex justify-center w-full">
+      <div className="min-h-screen w-full max-w-3xl px-6 md:px-12 py-32 flex flex-col justify-between">
+        <div className="flex flex-col-reverse md:flex-row justify-between w-full items-center md:items-start gap-8 md:gap-0">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Hi, I&apos;m Kartik
             </h1>
 
             <h2 className="text-xl mt-5 font-semibold">dev | kxm39</h2>
 
-            <ul className="flex gap-1 mt-2">
-              <li className="bg-[#2e2e2e] text-xs px-2 py-1 rounded-md font-bold flex gap-1">
+            <ul className="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
+              <li className="bg-gray-200 dark:bg-[#2e2e2e] text-xs px-2 py-1 rounded-md font-bold flex items-center gap-1">
                 <svg
                   version="1.1"
                   width="15"
@@ -61,7 +58,7 @@ export default function Portfolio() {
                       y2="23.96"
                       stroke="none"
                       strokeWidth="1"
-                      fill="rgb(0,0,0)"
+                      className="fill-black dark:fill-white"
                     />
                     <path
                       d="M 45 90 c -0.558 0 -1.011 -0.452 -1.011 -1.011 V 41.062 c 0 -0.558 0.453 -1.011 1.011 -1.011 s 1.011 0.453 1.011 1.011 v 47.927 C 46.011 89.548 45.558 90 45 90 z"
@@ -74,11 +71,11 @@ export default function Portfolio() {
                 </svg>
                 Chandigarh, India
               </li>
-              <li className="bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold flex gap-1">
+              <li className="bg-gray-200 dark:bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold flex items-center gap-1">
                 <AlarmClock className="w-4 h-4" />
                 {time} (IST)
               </li>
-              <li className="bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold cursor-pointer duration-300 ease-in-out hover:bg-[#434343]">
+              <li className="bg-gray-200 dark:bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold flex items-center cursor-pointer duration-300 ease-in-out hover:bg-gray-300 dark:hover:bg-[#434343]">
                 <a href="https://drive.google.com/file/d/1Tor0Jd-hCIiuI4FDVZZuL_wmbj6FF84v/view?usp=sharing" target="_blank">
                   ✨Resume
                 </a>
@@ -86,14 +83,14 @@ export default function Portfolio() {
             </ul>
           </div>
 
-          <div className="w-30 h-30 ">
+          <div className="w-40 h-40 md:w-30 md:h-30">
             <LensDemoThird />
           </div>
         </div>
 
-        <div className="mt-10">
-          <h2 className="font-bold text text-xl">About</h2>
-          <p className="text-[#ababab] font-semibold leading-6.5  tracking-tightertext-justify ">
+        <div className="mt-12 md:mt-10">
+          <h2 className="font-bold text-xl mb-4 text-center md:text-left">About</h2>
+          <p className="text-gray-600 dark:text-[#ababab] font-medium leading-relaxed tracking-tight text-justify md:text-left">
             I build things for the internet, sometimes
             they even work on the first try.
             Always experimenting with new tech,
@@ -108,48 +105,42 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-12">
           <TechMarquee />
         </div>
 
-        <div>
+        <div className="mt-12">
           <DashboardGrid />
         </div>
 
-        <div className="mb-5 mt-10">
-          <h2 className="text-[#fafafa] text-5xl mb-3 font-bold flex justify-center text-justify tracking-tighter">
+        <div className="mb-5 mt-16">
+          <h2 className="text-gray-900 dark:text-[#fafafa] text-4xl md:text-5xl mb-4 font-bold flex justify-center text-center tracking-tighter">
             Fresh stuff from my Desk
           </h2>
-          <p className="text-[#ababab] font-normal leading-7 -tracking-tight text-[20px] text-center max-w-full ">
-            I’ve been creating some awesome stuff, from sleek apps to cool
-          </p>
-          <p className="text-[#ababab] font-normal leading-7 -tracking-tight text-[20px] text-center max-w-[80%] mx-auto">
-            projects and more. Here’s a glimpse of what I’ve been{" "}
-          </p>
-          <p className="text-[#ababab] font-normal leading-7 -tracking-tight text-[20px] text-center max-w-[65%] mx-auto">
-            working on—check out the full{" "}
-            <a href={"/project"} className="text-[#3b82f5] hover:underline">
+          <p className="text-gray-600 dark:text-[#ababab] font-medium leading-relaxed tracking-tight text-lg md:text-[20px] text-center w-full md:max-w-[80%] mx-auto">
+            I’ve been creating some awesome stuff, from sleek apps to cool projects and more. Here’s a glimpse of what I’ve been working on—check out the full{" "}
+            <a href={"/project"} className="text-blue-600 dark:text-[#3b82f5] hover:underline font-semibold">
               projects page
             </a>{" "}
             for more!
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
             {featuredProjects.map((project, index) => (
               <Card key={index} project={project} />
             ))}
           </div>
         </div>
 
-        <div className="mt-10">
-          <h2 className="text-[#fafafa] text-5xl mb-4 font-bold flex justify-center text-justify tracking-tighter">
+        <div className="mt-16 text-center md:text-left">
+          <h2 className="text-gray-900 dark:text-[#fafafa] text-4xl md:text-5xl mb-6 font-bold tracking-tighter">
             Say Hello👋
           </h2>
-          <p className="text-[#ababab] font-normal leading-6 text-justify -tracking-tight">
-            Let’s build something legendary.My DMs on{" "}
+          <p className="text-gray-600 dark:text-[#ababab] font-medium leading-relaxed tracking-tight">
+            Let’s build something legendary. My DMs on{" "}
             <a
               href={"https://x.com/kartikm39"} target="_blank"
-              className="text-white hover:cursor-pointer hover:underline"
+              className="text-gray-900 dark:text-white font-bold hover:cursor-pointer hover:underline"
             >
               X/Twitter
             </a>{" "}
@@ -157,7 +148,7 @@ export default function Portfolio() {
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=manchandakartik11@gmail.com&su=Inquiry&body=Hi%20Kartik,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you..."
               target="_blank"
-              className="text-white hover:cursor-pointer hover:underline"
+              className="text-gray-900 dark:text-white font-bold hover:cursor-pointer hover:underline"
             >
               Mails
             </a>{" "}

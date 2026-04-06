@@ -59,7 +59,8 @@ export default function Splash() {
             bg-clip-text
             text-[clamp(2.5rem,13vw,12rem)]
             text-center
-            w-full
+            w-[110%]
+            md:w-full 
             overflow-hidden
             leading-none
             z-0

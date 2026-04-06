@@ -17,12 +17,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative min-h-screen bg-gray-50 dark:bg-black transition-colors duration-300">
       <AnimatePresence mode="wait">
         {showMatrix ? (
           <motion.div
             key="matrix"
-            className="fixed inset-0 z-50"
+            className="fixed inset-0 z-50 bg-black"
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

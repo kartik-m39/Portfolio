@@ -6,6 +6,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme inline {
   --font-allan: "Allan", serif;
 }
