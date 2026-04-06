@@ -40,9 +40,9 @@ export const Projects: CardProps[] = [
     description:
       "A medicine information platform using data scraped from NHS UK via Selenium. Integrated with Groq API to deliver accurate query-based medical info through a simple Next.js interface.",
     techStack: ["Selenium", "NextJS", "Typescript", "Clerk"],
-    liveLink: "https://pharma-sage-djza.vercel.app/",
+    liveLink: "https://pharma-sage-clinical.vercel.app/",
     githubLink: "https://github.com/kartik-m39/PharmaSage",
-    imageUrl: "/PharmaSage.png",
+    imageUrl: "/pharmasage.png",
   },
   {
     title: 'WebRTC',
@@ -103,6 +103,14 @@ export const Projects: CardProps[] = [
     githubLink: "https://github.com/kartik-m39/Tweth",
     imageUrl: "/tweth.png",
   },
+  {
+    title: "Toney",
+    description: "A minimalist terminal-based note-taking application built with Go and Bubble Tea. Experience the power of note-taking directly in your terminal with a clean, distraction-free interface.",
+    techStack: ["Golang", "BubbleTea", "bubbles", "lipgloss"],
+    liveLink: "",
+    githubLink: "https://github.com/kartik-m39/Toney",
+    imageUrl: "/toney.png"
+  }
 ];
 
 
