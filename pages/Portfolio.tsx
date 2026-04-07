@@ -76,7 +76,7 @@ export default function Portfolio() {
                 {time} (IST)
               </li>
               <li className="bg-gray-200 dark:bg-[#2e2e2e] text-xs px-3 py-1 rounded-md font-bold flex items-center cursor-pointer duration-300 ease-in-out hover:bg-gray-300 dark:hover:bg-[#434343]">
-                <a href="https://drive.google.com/file/d/1Tor0Jd-hCIiuI4FDVZZuL_wmbj6FF84v/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1SIIuU9ue0j-QPoLd9uoqmRoUh5CnAShd/view?usp=sharing" target="_blank">
                   ✨Resume
                 </a>
               </li>
