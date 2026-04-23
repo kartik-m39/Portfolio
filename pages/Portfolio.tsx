@@ -117,7 +117,7 @@ export default function Portfolio() {
           <h2 className="text-gray-900 dark:text-[#fafafa] text-4xl md:text-5xl mb-4 font-bold flex justify-center text-center tracking-tighter">
             Fresh stuff from my Desk
           </h2>
-          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight text-lg md:text-[20px] text-center w-full md:max-w-[80%] mx-auto">
+          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight text-lg md:text-[20px] text-center w-full md:max-w-[90%] mx-auto">
             I’ve been creating some awesome stuff, from sleek apps to cool projects and more. Here’s a glimpse of what I’ve been working on—check out the full{" "}
             <a href={"/project"} className="text-blue-600 dark:text-[#3b82f5] hover:underline font-semibold">
               projects page
@@ -133,10 +133,10 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-16 text-center md:text-left">
-          <h2 className="text-gray-900 dark:text-[#fafafa] text-4xl md:text-5xl mb-6 font-bold tracking-tighter">
+          <h2 className="text-gray-900 dark:text-[#fafafa] flex justify-center text-4xl md:text-5xl mb-6 font-bold tracking-tighter">
             Say Hello👋
           </h2>
-          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight">
+          <p className="text-gray-600 dark:text-[#ababab] font-medium md:leading-relaxed tracking-tight md:text-[20px] text-center w-full md:max-w-[95%] mx-auto">
             Let’s build something legendary. My DMs on{" "}
             <a
               href={"https://x.com/kartikm39"} target="_blank"
